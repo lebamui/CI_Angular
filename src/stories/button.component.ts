@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'storybook-button',
   imports: [CommonModule],
   template: ` <button
@@ -45,6 +46,7 @@ export default class ButtonComponent {
    * Optional click handler
    */
   @Output()
+  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
   onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {

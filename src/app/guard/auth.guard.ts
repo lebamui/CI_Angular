@@ -1,6 +1,7 @@
 import { CanActivateFn, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 export function isAuthenticated(): CanActivateFn {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
     // Check whether the user is authenticated.
     const isAuthenticated = true; // TODO: Implement this logic.

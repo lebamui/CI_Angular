@@ -1,7 +1,9 @@
+/* eslint-disable @angular-eslint/no-output-on-prefix */
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import type { User } from './User';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'storybook-header',
   template: `<header>
     <div class="storybook-header">
